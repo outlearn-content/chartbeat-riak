@@ -10,13 +10,15 @@
       "coverImage" : "https://raw.githubusercontent.com/basho/basho_docs/master/source/images/riak-transparent-larger.png",
       "pages" : [
         {"title" : "Welcome", "content" : "./context-pages/welcome.md"},
-        {"module" : "before-we-begin"},
         {"module" : "spec-module"}
       ]
     }
   ],
 
   "modules" : [
+    {
+      "olm" : "cookbook.olm"
+    },
     {
       "name" : "spec-module",
       "version" : "0.0.2",
