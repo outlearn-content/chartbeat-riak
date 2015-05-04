@@ -9,7 +9,7 @@
       "privacy" : "public",
       "coverImage" : "https://raw.githubusercontent.com/basho/basho_docs/master/source/images/riak-transparent-larger.png",
       "pages" : [
-        {"module" : "spec-module"},
+        {"module" : "spec-module"}
       ]
     }
   ],
