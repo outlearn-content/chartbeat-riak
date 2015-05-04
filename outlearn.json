@@ -16,12 +16,6 @@
 
   "modules" : [
     {
-      "olm" : "before-we-begin.md"
-    },
-    {
-      "olm" : "why-riak.md"
-    },
-    {
       "name" : "spec-module",
       "version" : "0.0.2",
       "title" : "Outlearn Package Example",
