@@ -17,7 +17,7 @@
 
   "modules" : [
     {
-      "olm" : "cookbook.olm"
+      "olm" : "before-we-begin.olm"
     },
     {
       "name" : "spec-module",
