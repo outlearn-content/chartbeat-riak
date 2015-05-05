@@ -12,6 +12,7 @@
         {"title" : "Welcome", "content" : "./context-pages/welcome.md"},
         {"module" : "before-we-begin"},
         {"module" : "why-riak"},
+        {"module" : "quickstart"},
         {"title" : "Live long and prosper", "content" : "./context-pages/live-long.md"}
       ]
     }
@@ -19,10 +20,13 @@
 
   "modules" : [
     {
-      "olm" : "./modules/before-we-begin.olm"
+      "olm" : "./modules/before-we-begin.md"
     },
     {
-      "olm" : "./modules/why-riak.olm"
+      "olm" : "./modules/why-riak.md"
+    },
+    {
+      "olm" : "./modules/quickstart.md"
     }
   ],
 
