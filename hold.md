@@ -34,6 +34,30 @@
     },
     {
       "olm" : "./modules/why-riak.md"
+    },
+    {
+      "olm" : "./modules/riak-concepts.olm"
+    },
+    {
+      "olm" : "./modules/riak-environmental-setup.olm"
+    },
+    {
+      "olm" : "./modules/riak-crud-operations-in-python.olm"
+    },
+    {
+      "olm" : "./modules/querying-riak-in-python.olm"
+    },
+    {
+      "olm" : "./modules/riak-object-modeling-in-python.olm"
+    },
+    {
+      "olm" : "./modules/riak-http-api.olm"
+    },
+    {
+      "olm" : "./modules/riak-with-clojure.olm"
+    },
+    {
+      "olm" : "./modules/conclusion.olm"
     }
   ],
 
