@@ -13,6 +13,8 @@
         {"module" : "before-we-begin"},
         {"module" : "why-riak"},
         {"module" : "quickstart"},
+        {"module" : "python"},
+        {"module" : "querying-python"},
         {"title" : "Live long and prosper", "content" : "./context-pages/live-long.md"}
       ]
     }
@@ -27,6 +29,12 @@
     },
     {
       "olm" : "./modules/quickstart.md"
+    },
+    {
+      "olm" : "./modules/python.md"
+    },
+    {
+      "olm" : "./modules/querying-python.md"
     }
   ],
 

@@ -23,7 +23,7 @@ Riak cluster running on your local machine.
 
 If you would like to explore some of Riak's functionality using a simple, 
 self-contained installer for OSX, you may view the 
-Riak App project.  This will
+[Riak App](https://github.com/basho-labs/riak-app) project.  This will
 create a single local instance of Riak so you may familiarize yourself 
 with Riak's configuration and administration.  Note that this sample 
 application should not be used in a production deployment.
@@ -34,7 +34,7 @@ application should not be used in a production deployment.
 # Riak Dev Cluster for OSX
 
 To quickly create a five-node local devrel cluster on OSX, you may use the
-Riak Dev Cluster project.
+[Riak Dev Cluster](https://github.com/basho-labs/riak-dev-cluster/) project.
 This application will easily install and join a cluster of local nodes on OSX
 for testing and administration.  Note that this sample application should not 
 be used in a production deployment.
