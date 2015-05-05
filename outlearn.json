@@ -21,7 +21,7 @@
       "olm" : "./modules/before-we-begin.olm"
     },
     {
-      "olm" : "why-riak.olm"
+      "olm" : "./modules/why-riak.olm"
     }
   ],
 
