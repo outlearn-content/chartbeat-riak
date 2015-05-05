@@ -18,12 +18,11 @@
 
   "modules" : [
     {
-      "olm" : "./modules/before-we-begin.olm"
+      "olm" : "before-we-begin.olm"
     },
     {
-      "olm" : "./modules/why-riak.olm"
+      "olm" : "why-riak.olm"
     }
-
   ],
 
   "assets" : [
