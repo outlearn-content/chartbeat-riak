@@ -18,7 +18,7 @@
 
   "modules" : [
     {
-      "olm" : "before-we-begin.olm"
+      "olm" : "./modules/before-we-begin.olm"
     },
     {
       "olm" : "why-riak.olm"
