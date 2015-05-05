@@ -10,24 +10,20 @@
       "coverImage" : "https://raw.githubusercontent.com/basho/basho_docs/master/source/images/riak-transparent-larger.png",
       "pages" : [
         {"title" : "Welcome", "content" : "./context-pages/welcome.md"},
-        {"module" : "before-we-begin"}
+        {"module" : "before-we-begin"},
+        {"module" : "why-riak"}
       ]
     }
   ],
 
   "modules" : [
     {
-      "olm" : "before-we-begin.olm"
+      "olm" : "./modules/before-we-begin.olm"
     },
     {
-      "name" : "spec-module",
-      "version" : "0.0.2",
-      "title" : "Outlearn Package Example",
-      "description": "An OLP (Outlearn Package) is a directory containing an Outlearn learning module in a format compatible for import into the Outlearn learning catalog.  This example acts as a simple template for creating your own Outlearn modules.",
-      "_commented" : "None of this data should be parsed.",
-      "sections" : [
-      ]
+      "olm" : "./modules/why-riak.olm"
     }
+
   ],
 
   "assets" : [
