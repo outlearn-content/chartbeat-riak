@@ -175,7 +175,7 @@ The obvious benefit of replication is that if one node goes down, nodes that con
 
 For example, imagine you have a list of country keys, whose values are those countries' capitals. If all you do is replicate that data to 2 servers, you would have 2 duplicate databases.
 
-![Replication](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/replication.svg)
+![Replication](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/replication.pdf)
 
 The downside with replication is that you are multiplying the amount of storage required for every duplicate. There is also some network overhead with this approach, since values must also be routed to all replicated nodes on write. But there is a more insidious problem with this approach, which I will cover shortly.
 
