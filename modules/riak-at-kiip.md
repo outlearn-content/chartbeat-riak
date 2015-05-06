@@ -1,5 +1,5 @@
 <!--
-name: riak-at-keep
+name: riak-at-kiip
 version : "0.1"
 title : "Scaling Riak at Keep"
 description: "Set expectations and assess initial confidence."
