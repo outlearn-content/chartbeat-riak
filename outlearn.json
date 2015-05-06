@@ -84,7 +84,7 @@
     {
       "name": "bucket-related-operations",
       "version" : "0.1",
-      "title" : "Riak HTTP API - Bucket-related Operations",
+      "title" : "Bucket-related Operations - Riak HTTP API",
       "description": "Get learners using bucket-related operations with Riak HTTP API and curl.",
       "homepage" : "http://docs.basho.com/riak/latest/dev/taste-of-riak/",
       "author" : "Basho Technologies, Inc.",
@@ -117,6 +117,83 @@
         {
           "title": "HTTP List Keys",
           "location": "./modules/list-buckets.md"
+        }
+      ]
+    },
+    {
+      "name": "object-related-operations",
+      "version" : "0.1",
+      "title" : "Object-related Operations - Riak HTTP API",
+      "description": "Get learners using object-related operations with Riak HTTP API and curl.",
+      "homepage" : "http://docs.basho.com/riak/latest/dev/taste-of-riak/",
+      "author" : "Basho Technologies, Inc.",
+      "license" : "CC Attribution 3.0",
+      "contact" : {
+  	    "url" : "http://basho.com",
+  	    "twitter": "basho"
+  	  },
+      "sections" : [
+        {
+          "title": "HTTP Fetch Object",
+          "location": "./modules/fetch-object.md"
+        },
+        {
+          "title": "HTTP Store Object",
+          "location": "./modules/store-object.md"
+        },
+        {
+          "title": "HTTP Delete Object",
+          "location": "./modules/delete-object.md"
+        }
+      ]
+    },
+    {
+      "name": "query-related-operations",
+      "version" : "0.1",
+      "title" : "Query-related Operations - Riak HTTP API",
+      "description": "Get learners using query-related operations with Riak HTTP API and curl.",
+      "homepage" : "http://docs.basho.com/riak/latest/dev/taste-of-riak/",
+      "author" : "Basho Technologies, Inc.",
+      "license" : "CC Attribution 3.0",
+      "contact" : {
+  	    "url" : "http://basho.com",
+  	    "twitter": "basho"
+  	  },
+      "sections" : [
+        {
+          "title": "HTTP MapReduce",
+          "location": "./modules/mapreduce.md"
+        },
+        {
+          "title": "HTTP Secondary Indexes",
+          "location": "./modules/secondary-indexes.md"
+        }
+      ]
+    },
+    {
+      "name": "server-related-operations",
+      "version" : "0.1",
+      "title" : "Server-related Operations - Riak HTTP API",
+      "description": "Get learners using server-related operations with Riak HTTP API and curl.",
+      "homepage" : "http://docs.basho.com/riak/latest/dev/taste-of-riak/",
+      "author" : "Basho Technologies, Inc.",
+      "license" : "CC Attribution 3.0",
+      "contact" : {
+  	    "url" : "http://basho.com",
+  	    "twitter": "basho"
+  	  },
+      "sections" : [
+        {
+          "title": "HTTP Ping",
+          "location": "./modules/ping.md"
+        },
+        {
+          "title": "HTTP Status",
+          "location": "./modules/status.md"
+        },
+        {
+          "title": "HTTP List Resources",
+          "location": "./modules/list-resources.md"
         }
       ]
     }
