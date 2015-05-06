@@ -41,6 +41,9 @@
       "olm" : "./modules/why-riak.md"
     },
     {
+      "olm" : "./modules/riak-concepts.md"
+    },
+    {
       "olm" : "./modules/quickstart.md"
     },
     {
