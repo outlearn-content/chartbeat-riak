@@ -21,6 +21,7 @@
         {"module" : "query-related-operations"},
         {"module" : "server-related-operations"},
         {"module" : "search-related-operations"},
+        {"module" : "clojure"},
         {"title" : "Live long and prosper", "content" : "./context-pages/live-long.md"}
       ]
     }
@@ -38,6 +39,9 @@
     },
     {
       "olm" : "./modules/python.md"
+    },
+    {
+      "olm" : "./modules/clojure.md"
     },
     {
       "name": "querying-python",
