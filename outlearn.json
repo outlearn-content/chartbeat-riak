@@ -17,6 +17,9 @@
         {"module" : "querying-python"},
         {"module" : "object-modeling-python"},
         {"module" : "bucket-related-operations"},
+        {"module" : "object-related-operations"},
+        {"module" : "query-related-operations"},
+        {"module" : "server-related-operations"},
         {"title" : "Live long and prosper", "content" : "./context-pages/live-long.md"}
       ]
     }
