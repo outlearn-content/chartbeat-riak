@@ -23,6 +23,9 @@ The focus of this path is on giving you new skills that you can put to practice.
 - Perform CRUD operations in Python
 - Use Python to query a Riak database
 - Create Riak object models
+- Use the HTTP API to perform operations related to buckets, objects, queries, servers, and searches.
+- Use Riak with Clojure
+- Apply your Riak skills in the environment used at Chartbeat
 
 <!-- @section, "title": "Expectations for time commitment" -->
 

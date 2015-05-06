@@ -11,6 +11,7 @@
       "pages" : [
         {"title" : "Welcome", "content" : "./context-pages/welcome.md"},
         {"module" : "before-we-begin"},
+        {"module" : "riak-at-kiip"},
         {"module" : "why-riak"},
         {"module" : "quickstart"},
         {"module" : "python"},
@@ -31,6 +32,9 @@
   "modules" : [
     {
       "olm" : "./modules/before-we-begin.md"
+    },
+    {
+      "olm" : "./modules/riak-at-kiip.md"
     },
     {
       "olm" : "./modules/why-riak.md"
