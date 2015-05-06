@@ -15,6 +15,8 @@
         {"module" : "quickstart"},
         {"module" : "python"},
         {"module" : "querying-python"},
+        {"module" : "object-modeling-python"},
+        {"module" : "bucket-related-operations"},
         {"title" : "Live long and prosper", "content" : "./context-pages/live-long.md"}
       ]
     }
@@ -53,6 +55,68 @@
         {
           "title": "Querying with Python",
           "location": "./modules/querying-python.md"
+        }
+      ]
+    },
+    {
+      "name": "object-modeling-python",
+      "version" : "0.1",
+      "title" : "Riak Object Modeling in Python",
+      "description": "Walk learners through basic object modeling operations",
+      "homepage" : "http://docs.basho.com/riak/latest/dev/taste-of-riak/",
+      "author" : "Basho Technologies, Inc.",
+      "license" : "CC Attribution 3.0",
+      "contact" : {
+  	    "url" : "http://basho.com",
+  	    "twitter": "basho"
+  	  },
+      "sections" : [
+        {
+          "title": "Object Modeling",
+          "location": "./modules/object-modeling.md"
+        },
+        {
+          "title": "Object Modeling with Python",
+          "location": "./modules/object-modeling-python.md"
+        }
+      ]
+    },
+    {
+      "name": "bucket-related-operations",
+      "version" : "0.1",
+      "title" : "Riak HTTP API - Bucket-related Operations",
+      "description": "Get learners using bucket-related operations with Riak HTTP API and curl.",
+      "homepage" : "http://docs.basho.com/riak/latest/dev/taste-of-riak/",
+      "author" : "Basho Technologies, Inc.",
+      "license" : "CC Attribution 3.0",
+      "contact" : {
+  	    "url" : "http://basho.com",
+  	    "twitter": "basho"
+  	  },
+      "sections" : [
+        {
+          "title": "HTTP API",
+          "location": "./modules/http-api.md"
+        },
+        {
+          "title": "HTTP Get Bucket Properties",
+          "location": "./modules/get-bucket-props.md"
+        },
+        {
+          "title": "HTTP Set Bucket Properties",
+          "location": "./modules/set-bucket-props.md"
+        },
+        {
+          "title": "HTTP Reset Bucket Properties",
+          "location": "./modules/reset-bucket-props.md"
+        },
+        {
+          "title": "HTTP List Buckets",
+          "location": "./modules/list-buckets.md"
+        },
+        {
+          "title": "HTTP List Keys",
+          "location": "./modules/list-buckets.md"
         }
       ]
     }
