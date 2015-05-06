@@ -41,7 +41,10 @@
       "homepage" : "http://docs.basho.com/riak/latest/dev/taste-of-riak/",
       "author" : "Basho Technologies, Inc.",
       "license" : "CC Attribution 3.0",
-      "twitter" : "basho",
+      "contact" : {
+  	    "url" : "http://basho.com",
+  	    "twitter": "basho"
+  	  },
       "sections" : [
         {
           "title": "Getting Started",
