@@ -31,18 +31,3 @@ the restart to ensure that the node is up and running.
 
 **Note**: If you are running a cluster instead of a single node, you
 will have to make these changes on each node.
-
-## Choose Your Programming Language
-
-Please select the language with which you'd like to proceed:
-
-<ul class="planguages">
-<li><a href="/dev/taste-of-riak/querying-java/"><img src="/images/plangs/java.jpg" alt="Java"></a></li>
-<li><a href="/dev/taste-of-riak/querying-ruby/"><img src="/images/plangs/ruby.jpg" alt="Ruby"></a></li>
-<li><a href="/dev/taste-of-riak/querying-python/"><img src="/images/plangs/python.png" alt="Python"></a></li>
-<li><a href="/dev/taste-of-riak/querying-csharp/"><img src="/images/plangs/csharp.png" alt="CSharp"></a></li>
-<li><a href="/dev/taste-of-riak/querying-nodejs/"><img src="/images/plangs/nodejs.png" alt="Node.js"></a></li>
-<li><a href="/dev/taste-of-riak/querying-erlang/"><img src="/images/plangs/erlang.jpg" alt="Erlang"></a></li>
-<li><a href="/dev/taste-of-riak/querying-php/"><img src="/images/plangs/php.png" alt="PHP"></a></li>
-</ul>
-
