@@ -13,6 +13,7 @@
         {"module" : "before-we-begin"},
         {"module" : "riak-at-kiip"},
         {"module" : "why-riak"},
+        {"module" : "riak-concepts"},
         {"module" : "quickstart"},
         {"module" : "python"},
         {"module" : "querying-python"},
