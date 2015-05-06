@@ -1,14 +1,3 @@
-<!--
-name: querying-python
-version : "0.1"
-title : "Querying Riak in Python"
-description: "Walk learners through basic querying operations."
-homepage : "http://docs.basho.com/riak/latest/dev/taste-of-riak/"
-author : "Basho Technologies, Inc."
-license : "CC Attribution 3.0"
-url : "http://basho.com"
-twitter : "basho"
--->
 
 
 
