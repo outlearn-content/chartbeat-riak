@@ -12,7 +12,9 @@ twitter : "coderoshi"
 
 
 
-# Concepts
+<!-- @section -->
+
+# Introduction
 
 Believe me, dear reader, when I suggest that thinking in a distributed fashion is awkward. When I had first encountered Riak, I was not prepared for some of its more preternatural concepts. Our brains just aren't hardwired to think in a distributed, asynchronous manner. Richard Dawkins coined the term *Middle World*---the serial, rote land humans encounter every day, which exists between the extremes of the very small strangeness of quarks and the vastness of outer space.
 
@@ -20,7 +22,9 @@ We don't consider these extremes clearly because we don't encounter them on a da
 
 <!-- image: caveman confused by a bunch of atoms -->
 
-## The Landscape
+<!-- @section -->
+
+# The Landscape
 
 The existence of databases like Riak is the culmination of two basic trends: accessible technology spurring different data requirements, and gaps in the data management market.
 
@@ -76,7 +80,9 @@ This limitation changes how you model data. Relational normalization (organizing
 
     Examples: *Riak*, *Redis*, *Voldemort*
 
-## Riak Components
+<!-- @section -->
+
+# Riak Components
 
 Riak is a Key/Value (KV) database, built from the ground up to safely distribute data across a cluster of physical servers, called nodes. A Riak cluster is also known as a ring (we'll cover why later).
 
@@ -86,7 +92,7 @@ Riak functions similarly to a very large hash space. Depending on your backgroun
 
 <h3>Key and Value</h3>
 
-![A Key is an Address](../assets/decor/addresses.png)
+![A Key is an Address](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/decor/addresses.png)
 
 Key/value is the most basic construct in all of computerdom. You can think of a key like a home address, such as Bob's house with the unique key 5124, while the value would be maybe Bob (and his stuff).
 
@@ -155,7 +161,9 @@ Due to its versatility (and downright necessity in some cases) and improved perf
 For convenience, we call a *type/bucket/key + value* pair an *object*, sparing ourselves the verbosity of "X key in the Y bucket with the Z type, and its value".
 
 
-## Replication and Partitions
+<!-- @section -->
+
+# Replication and Partitions
 
 Distributing data across several nodes is how Riak is able to remain highly available, tolerating outages and network partitions. Riak combines two styles of distribution to achieve this: [replication](http://en.wikipedia.org/wiki/Replication) and [partitions](http://en.wikipedia.org/wiki/Partition).
 
@@ -167,7 +175,7 @@ The obvious benefit of replication is that if one node goes down, nodes that con
 
 For example, imagine you have a list of country keys, whose values are those countries' capitals. If all you do is replicate that data to 2 servers, you would have 2 duplicate databases.
 
-![Replication](../assets/replication.svg)
+![Replication](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/replication.svg)
 
 The downside with replication is that you are multiplying the amount of storage required for every duplicate. There is also some network overhead with this approach, since values must also be routed to all replicated nodes on write. But there is a more insidious problem with this approach, which I will cover shortly.
 
@@ -180,7 +188,7 @@ With partitioning, our total capacity can increase without any big expensive har
 
 For example, if we partition our countries into 2 servers, we might put all countries beginning with letters A-N into Node A, and O-Z into Node B.
 
-![Partitions](../assets/partitions.svg)
+![Partitions](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/partitions.svg)
 
 There is a bit of overhead to the partition approach. Some service must keep track of what range of values live on which node. A requesting application must know that the key `Spain` will be routed to Node B, not Node A.
 
@@ -196,7 +204,7 @@ Our server count has increased, but so has our capacity and reliability. If you'
 
 The Riak team suggests a minimum of 5 nodes for a Riak cluster, and replicating to 3 nodes (this setting is called `n_val`, for the number of *nodes* on which to replicate each object).
 
-![Replication Partitions](../assets/replpart.svg)
+![Replication Partitions](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/replpart.svg)
 
 <!-- If the odds of a node going down on any day is 1%, then the odds of any server going down each day when you have 100 of them is about (1-(0.99^100)) 63%. For sufficiently large systems, servers going down are no longer edge-cases. They become regular cases that must be planned for, and designed into your system.
 -->
@@ -216,7 +224,7 @@ We won't do all of the math, but trust me when I say `favorite` falls within the
 
 If we visualize our 64 partitions as a ring, `favorite` falls here.
 
-![Riak Ring](../assets/ring0.svg)
+![Riak Ring](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/ring0.svg)
 
 "Didn't he say that Riak suggests a minimum of 5 nodes? How can we put 64 partitions on 5 nodes?" We just give each node more than one partition, each of which is managed by a *vnode*, or *virtual node*.
 
@@ -234,13 +242,15 @@ So when we write our `favorite` object to vnode 3, it will be replicated to vnod
 
 We can visualize the Ring with its vnodes, managing nodes, and where `favorite` will go.
 
-![Riak Ring](../assets/ring1.svg)
+![Riak Ring](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/ring1.svg)
 
 The Ring is more than just a circular array of hash partitions. It's also a system of metadata that gets copied to every node. Each node is aware of every other node in the cluster, which nodes own which vnodes, and other system data.
 
 Armed with this information, requests for data can target any node. It will horizontally access data from the proper nodes, and return the result.
 
-## Practical Tradeoffs
+<!-- @section -->
+
+# Practical Tradeoffs
 
 So far we've covered the good parts of partitioning and replication: highly available when responding to requests, and inexpensive capacity scaling on commodity hardware. With the clear benefits of horizontal scaling, why is it not more common?
 
@@ -280,7 +290,7 @@ Riak allows you to choose how many nodes you want to replicate an object to, and
 
 A thought experiment may help clarify things.
 
-![NRW](../assets/nrw.svg)
+![NRW](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/nrw.svg)
 
 <h4>N</h4>
 
@@ -454,7 +464,9 @@ Look closely at promises of distributed transactions---it's often couched in som
 
 As your server count grows---especially as you introduce multiple datacenters---the odds of partitions and node failures drastically increase. My best advice is to design for it upfront.
 
-## Wrapup
+<!-- @section -->
+
+# Wrapup
 
 Riak is designed to bestow a range of real-world benefits, but equally, to handle the fallout of wielding such power. Consistent hashing and vnodes are an elegant solution to horizontally scaling across servers. N/R/W allows you to dance with the CAP theorem by fine-tuning against its constraints. And vector clocks allow another step closer to consistency by allowing you to manage conflicts that will occur at high load.
 
