@@ -12,8 +12,9 @@ twitter : "basho"
 
 
 
-If you haven't set up a Riak Node and started it, please visit the
-Prerequisites first.
+<!-- @section -->
+
+# Overview
 
 To try this flavor of Riak, a working installation of Python is
 required, with Python 2.7 preferred. One of the Python package managers,
