@@ -11,7 +11,12 @@ twitter : "basho"
 -->
 
 
-In this tutorial, we'll share some quick start installers for OSX, as 
+
+<!-- @section -->
+
+# Overview
+
+In this tutorial, we'll share some quick start installers for OSX, as
 well as provide instructions for building a
 [five-node](http://basho.com/why-your-riak-cluster-should-have-at-least-five-nodes/)
 Riak cluster running on your local machine.
@@ -21,11 +26,11 @@ Riak cluster running on your local machine.
 
 # DMG Installer for OSX
 
-If you would like to explore some of Riak's functionality using a simple, 
-self-contained installer for OSX, you may view the 
+If you would like to explore some of Riak's functionality using a simple,
+self-contained installer for OSX, you may view the
 [Riak App](https://github.com/basho-labs/riak-app) project.  This will
-create a single local instance of Riak so you may familiarize yourself 
-with Riak's configuration and administration.  Note that this sample 
+create a single local instance of Riak so you may familiarize yourself
+with Riak's configuration and administration.  Note that this sample
 application should not be used in a production deployment.
 
 
@@ -36,7 +41,7 @@ application should not be used in a production deployment.
 To quickly create a five-node local devrel cluster on OSX, you may use the
 [Riak Dev Cluster](https://github.com/basho-labs/riak-dev-cluster/) project.
 This application will easily install and join a cluster of local nodes on OSX
-for testing and administration.  Note that this sample application should not 
+for testing and administration.  Note that this sample application should not
 be used in a production deployment.
 
 
@@ -45,8 +50,8 @@ be used in a production deployment.
 # Install Riak
 
 The above installers helped you explore the basics of Riak on OSX.  
-For full instructions on installing Riak for your desired operating 
-system, follow the steps below. 
+For full instructions on installing Riak for your desired operating
+system, follow the steps below.
 
 Basho's pre-packaged Riak binaries (found under Downloads) embed the
 Erlang runtime. This tutorial, however, is based on a source build, so
@@ -213,7 +218,7 @@ First, try joining the node `dev2` to `dev1`:
 dev2/bin/riak-admin cluster join dev1@127.0.0.1
 ```
 
-If the response states that the cluster join is successfully staged, 
+If the response states that the cluster join is successfully staged,
 everything went well. We'll get into staging below, but we still have
 three running nodes that have not yet been joined, so let's join those as well:
 
@@ -724,4 +729,3 @@ the basics of Riak, Riak Data Types,
 and Riak Search 2.0, as well as a variety of other
 pages in the **Riak for Developers** section of the documentation (in
 the navbar on the left).
-

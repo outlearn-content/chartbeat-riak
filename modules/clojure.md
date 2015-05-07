@@ -11,13 +11,21 @@ twitter : "basho"
 -->
 
 
+
+<!-- @section -->
+
+# Prerequisites
+
 If you haven't set up a Riak Node and started it, please visit the
 Prerequisites first.
 
 To try this flavor of Riak, a working installation of Java and
 [Leiningen](https://github.com/technomancy/leiningen) are required.
 
-## Client Setup
+
+<!-- @section -->
+
+# Client Setup
 
 [Welle](http://clojureriak.info/) is a community-maintained Riak client
 library for Clojure.
@@ -55,6 +63,11 @@ use this code snippet instead:
 ;; Connects to a Riak node at 127.0.0.1:10018
 (wc/connect! "http://127.0.0.1:10018/riak")
 ```
+
+
+<!-- @section -->
+
+# Interacting with Riak
 
 We are now ready to start interacting with Riak.
 
