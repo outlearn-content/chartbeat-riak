@@ -13,4 +13,4 @@ Good luck!
 
 Nathan
 
-<!-- @section, type: 'image/jpeg', title: 'Architecture Diagram', location: './assets/npotter.jpg' -->
+![Nathan Potter](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/npotter.jpg)
