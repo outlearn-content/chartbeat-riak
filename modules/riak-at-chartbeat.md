@@ -9,3 +9,5 @@ license : ""
 <!-- @section -->
 
 # Content from Chartbeat here
+
+This is how we use Riak at Charbeat.
