@@ -13,4 +13,4 @@ Good luck!
 
 Nathan
 
-<img src="https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/npotter.jpg" alt="Nathan" style="width:300px;height:300px">
+<img src="https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/npotter.jpg" alt="Nathan" style="width:250px;height:250px" align="left">
