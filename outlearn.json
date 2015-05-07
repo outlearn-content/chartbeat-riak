@@ -30,6 +30,7 @@
         {"title" : "But I like Clojure", "content" : "./context-pages/clojure.md"},
         {"module" : "clojure"},
         {"title" : "Ready to try it out", "content" : "./context-pages/try-it.md"},
+        {"module" : "lab"},
         {"module" : "conclusion"},
         {"title" : "Live long and prosper", "content" : "./context-pages/live-long.md"}
       ]
@@ -60,6 +61,9 @@
     },
     {
       "olm" : "./modules/clojure.md"
+    },
+    {
+      "olm" : "./modules/lab.md"
     },
     {
       "olm" : "./modules/conclusion.md"
