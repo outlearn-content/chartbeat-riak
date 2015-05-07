@@ -175,7 +175,7 @@ The obvious benefit of replication is that if one node goes down, nodes that con
 
 For example, imagine you have a list of country keys, whose values are those countries' capitals. If all you do is replicate that data to 2 servers, you would have 2 duplicate databases.
 
-![Replication](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/replication.pdf)
+![Replication](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/replication.png)
 
 The downside with replication is that you are multiplying the amount of storage required for every duplicate. There is also some network overhead with this approach, since values must also be routed to all replicated nodes on write. But there is a more insidious problem with this approach, which I will cover shortly.
 
@@ -188,7 +188,7 @@ With partitioning, our total capacity can increase without any big expensive har
 
 For example, if we partition our countries into 2 servers, we might put all countries beginning with letters A-N into Node A, and O-Z into Node B.
 
-![Partitions](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/partitions.svg)
+![Partitions](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/partitions.png)
 
 There is a bit of overhead to the partition approach. Some service must keep track of what range of values live on which node. A requesting application must know that the key `Spain` will be routed to Node B, not Node A.
 
@@ -204,7 +204,7 @@ Our server count has increased, but so has our capacity and reliability. If you'
 
 The Riak team suggests a minimum of 5 nodes for a Riak cluster, and replicating to 3 nodes (this setting is called `n_val`, for the number of *nodes* on which to replicate each object).
 
-![Replication Partitions](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/replpart.svg)
+![Replication Partitions](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/replpart.png)
 
 <!-- If the odds of a node going down on any day is 1%, then the odds of any server going down each day when you have 100 of them is about (1-(0.99^100)) 63%. For sufficiently large systems, servers going down are no longer edge-cases. They become regular cases that must be planned for, and designed into your system.
 -->
@@ -224,7 +224,7 @@ We won't do all of the math, but trust me when I say `favorite` falls within the
 
 If we visualize our 64 partitions as a ring, `favorite` falls here.
 
-![Riak Ring](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/ring0.svg)
+![Riak Ring](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/ring0.png)
 
 "Didn't he say that Riak suggests a minimum of 5 nodes? How can we put 64 partitions on 5 nodes?" We just give each node more than one partition, each of which is managed by a *vnode*, or *virtual node*.
 
@@ -242,7 +242,7 @@ So when we write our `favorite` object to vnode 3, it will be replicated to vnod
 
 We can visualize the Ring with its vnodes, managing nodes, and where `favorite` will go.
 
-![Riak Ring](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/ring1.svg)
+![Riak Ring](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/ring1.png)
 
 The Ring is more than just a circular array of hash partitions. It's also a system of metadata that gets copied to every node. Each node is aware of every other node in the cluster, which nodes own which vnodes, and other system data.
 
@@ -290,7 +290,7 @@ Riak allows you to choose how many nodes you want to replicate an object to, and
 
 A thought experiment may help clarify things.
 
-![NRW](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/nrw.svg)
+![NRW](https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/nrw.png)
 
 <h4>N</h4>
 
