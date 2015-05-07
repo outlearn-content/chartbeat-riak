@@ -12,3 +12,5 @@ Taste of Riak is a pilot both for us and Outlearn. I would love to hear any feed
 Good luck!
 
 Nathan
+
+<!-- @section, type: 'image/jpeg', title: 'Architecture Diagram', location: './assets/npotter.jpg' -->
