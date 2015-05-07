@@ -29,4 +29,8 @@ The focus of this path is on giving you new skills that you can put to practice.
 
 <!-- @section, "title": "Expectations for time commitment" -->
 
+Part of the beaty of online learning is that you can time it flexibly. But you do need to put in serious effort to get most out of this path. Everyone learns differently and some people like to skim things quickly and come back later while others dig deep at first go. We think that you'll need an average of X hours to get through this path, including completing the tasks included in the modules.
+
 <!-- @section, "title": "Prerequisites" -->
+
+This path assumes that you already know Python, basics of HTTP APIs, and have a general idea of how databases work. If you have specific areas where you'd like some refreshing and you're not sure where to find it, reach out to Wes for some suggestions.

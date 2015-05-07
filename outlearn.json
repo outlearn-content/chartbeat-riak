@@ -13,6 +13,7 @@
         {"module" : "before-we-begin"},
         {"module" : "riak-at-kiip"},
         {"module" : "why-riak"},
+        {"module" : "riak-at-chartbeat"},
         {"title" : "Prep your mind and machine", "content" : "./context-pages/prepare.md"},
         {"module" : "riak-concepts"},
         {"module" : "quickstart"},
@@ -44,6 +45,9 @@
     },
     {
       "olm" : "./modules/why-riak.md"
+    },
+    {
+      "olm" : "./modules/riak-at-chartbeat.md"
     },
     {
       "olm" : "./modules/riak-concepts.md"
