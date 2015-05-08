@@ -1,7 +1,7 @@
 <!--
 name: riak-at-kiip
 version : "0.1"
-title : "Scaling Riak at Keep"
+title : "Scaling Riak at Kiip"
 description: "Set expectations and assess initial confidence."
 license : "Vimeo"
 -->
