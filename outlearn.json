@@ -11,7 +11,7 @@
         {"title" : "Welcome", "content" : "./context-pages/welcome.md"},
         {"module" : "before-we-begin"},
         {"module" : "outlearn://basho/why-riak"},
-        {"module" : "riak-at-kiip"},
+        {"module" : "outlearn://basho/riak-at-kiip"},
         {"module" : "riak-at-chartbeat"},
         {"title" : "Prep your mind and machine", "content" : "./context-pages/prepare.md"},
         {"module" : "riak-concepts"},
