@@ -11,11 +11,6 @@ Reads the bucket properties.
 GET /buckets/bucket/props
 ```
 
-Optional query parameters (only valid for the old format):
-
-* `props` - whether to return the bucket properties (`true` is the default)
-* `keys` - whether to return the keys stored in the bucket. (`false` is the
-default). See also HTTP List Keys.
 
 
 <!-- @section -->

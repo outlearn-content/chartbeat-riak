@@ -3,6 +3,7 @@ name: riak-at-kiip
 version : "0.1"
 title : "Scaling Riak at Kiip"
 description: "Set expectations and assess initial confidence."
+author : "Kiip, Inc."
 license : "Vimeo"
 -->
 
