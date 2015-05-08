@@ -41,9 +41,6 @@
       "olm" : "./modules/before-we-begin.md"
     },
     {
-      "olm" : "./modules/riak-at-kiip.md"
-    },
-    {
       "olm" : "./modules/riak-at-chartbeat.md"
     },
     {
