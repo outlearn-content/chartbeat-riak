@@ -44,9 +44,6 @@
       "olm" : "./modules/riak-at-chartbeat.md"
     },
     {
-      "olm" : "./modules/riak-concepts.md"
-    },
-    {
       "olm" : "./modules/lab.md"
     },
     {
