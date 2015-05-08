@@ -45,22 +45,10 @@
       "olm" : "./modules/riak-at-kiip.md"
     },
     {
-      "olm" : "./modules/why-riak.md"
-    },
-    {
       "olm" : "./modules/riak-at-chartbeat.md"
     },
     {
       "olm" : "./modules/riak-concepts.md"
-    },
-    {
-      "olm" : "./modules/quickstart.md"
-    },
-    {
-      "olm" : "./modules/python.md"
-    },
-    {
-      "olm" : "./modules/clojure.md"
     },
     {
       "olm" : "./modules/lab.md"
