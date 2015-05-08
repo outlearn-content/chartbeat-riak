@@ -1,7 +1,7 @@
 <!--
 name: conclusion
 version : "0.1"
-title : "Conclusiong and Next Steps"
+title : "Conclusion and Next Steps"
 description: "Review what learners have learned and suggest next steps"
 license : "CC Attribution-ShareAlike 4.0"
 -->
