@@ -14,7 +14,7 @@
         {"module" : "outlearn://basho/riak-at-kiip"},
         {"module" : "riak-at-chartbeat"},
         {"title" : "Prep your mind and machine", "content" : "./context-pages/prepare.md"},
-        {"module" : "riak-concepts"},
+        {"module" : "outlearn://coderoshi/riak-concepts"},
         {"module" : "outlearn://basho/quickstart"},
         {"title" : "Diving in with Python", "content" : "./context-pages/python.md"},
         {"module" : "outlearn://basho/python"},
