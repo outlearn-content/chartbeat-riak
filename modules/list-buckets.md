@@ -10,7 +10,7 @@ in the cluster and should not be used in production.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 GET /buckets?buckets=true
@@ -23,7 +23,7 @@ Required query parameter:
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal status codes:
 * 200 OK
@@ -37,7 +37,7 @@ will be an array of bucket names.
 
 <!-- @section -->
 
-# Example
+## Example
 
 ```curl
 $ curl -i http://localhost:8098/buckets?buckets=true

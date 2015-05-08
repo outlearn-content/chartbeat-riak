@@ -12,7 +12,7 @@ This operation requires traversing all keys stored in the cluster and should not
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 GET /buckets/bucket/keys?keys=true    # List all keys
@@ -28,7 +28,7 @@ chunked-encoding.
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal response codes:
 
@@ -49,7 +49,7 @@ containing `"keys"` entries.
 
 <!-- @section -->
 
-# Example
+## Example
 
 ```curl
 $ curl -i http://localhost:8098/buckets/jsconf/keys?keys=true

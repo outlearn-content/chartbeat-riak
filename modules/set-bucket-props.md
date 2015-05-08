@@ -5,7 +5,7 @@ Sets bucket properties like "n_val" and "allow_mult".
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 PUT /buckets/bucket/props
@@ -50,7 +50,7 @@ something like
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal status codes:
 
@@ -67,7 +67,7 @@ If successful, no content will be returned in the response body.
 
 <!-- @section -->
 
-# Example
+## Example
 
 ```curl
 $ curl -v -XPUT http://127.0.0.1:8098/buckets/test/props \

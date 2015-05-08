@@ -33,7 +33,7 @@ If Luwak is enabled, the following resource will also be included:
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 GET /
@@ -46,7 +46,7 @@ Headers:
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal status codes:
 
@@ -60,7 +60,7 @@ form
 
 <!-- @section -->
 
-# Example
+## Example
 
 Request JSON response
 
@@ -76,7 +76,7 @@ Content-Length: 398
 
 {"riak_kv_wm_buckets":"/buckets","riak_kv_wm_buckets":"/riak","riak_kv_wm_counter":"/buckets","riak_kv_wm_index":"/buckets","riak_kv_wm_keylist":"/buckets","riak_kv_wm_link_walker":"/buckets","riak_kv_wm_link_walker":"/riak","riak_kv_wm_mapred":"/mapred","riak_kv_wm_object":"/buckets","riak_kv_wm_object":"/riak","riak_kv_wm_ping":"/ping","riak_kv_wm_props":"/buckets","riak_kv_wm_stats":"/stats"}
 
- Request HTML response
+# Request HTML response
 curl -i http://localhost:8098 -H "Accept: text/html"
 HTTP/1.1 200 OK
 Vary: Accept

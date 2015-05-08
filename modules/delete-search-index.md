@@ -5,7 +5,7 @@ Deletes a Riak Search index.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```
 DELETE /search/index/<index_name>
@@ -14,7 +14,7 @@ DELETE /search/index/<index_name>
 
 <!-- @section -->
 
-# Normal Response Codes
+## Normal Response Codes
 
 * `204 No Content` --- The index was successfully deleted (also returned
     if the index did not exist to begin with)
@@ -22,6 +22,6 @@ DELETE /search/index/<index_name>
 
 <!-- @section -->
 
-# Typical Error Codes
+## Typical Error Codes
 
 * `503 Service Unavailable` --- The request timed out internally

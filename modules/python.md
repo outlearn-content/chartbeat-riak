@@ -14,7 +14,7 @@ twitter : "basho"
 
 <!-- @section -->
 
-# Overview
+## Overview
 
 To try this flavor of Riak, a working installation of Python is
 required, with Python 2.7 preferred. One of the Python package managers,
@@ -29,7 +29,7 @@ python`.
 
 <!-- @section -->
 
-# Prerequisites
+## Prerequisites
 
 First, you must install some packages needed by the Riak Python client:
 
@@ -37,7 +37,7 @@ First, you must install some packages needed by the Riak Python client:
 * `libffi-dev` --- Foreign function interface library
 * `libssl-dev` --- libssl and libcrypto development libraries
 
-## Ubuntu (12.04 & 14.04)
+### Ubuntu (12.04 & 14.04)
 
 ```bash
 sudo apt-get install python-dev libffi-dev libssl-dev
@@ -46,7 +46,7 @@ sudo apt-get install python-dev libffi-dev libssl-dev
 
 <!-- @section -->
 
-# Client Setup
+## Client Setup
 
 The easiest way to install the client is with `easy_install` or `pip`.
 Either of the commands below will ensure that the client and all its
@@ -72,7 +72,7 @@ python setup.py install
 
 <!-- @section -->
 
-# Connecting to Riak
+## Connecting to Riak
 
 Now, let's start the Python REPL and get set up. Enter the following
 into the Python REPL:
@@ -86,8 +86,8 @@ new client instance:
 ```python
 myClient = riak.RiakClient(pb_port=8087, protocol='pbc')
 
- Because the Python client uses the Protocol Buffers interface by
- default, the following will work the same:
+# Because the Python client uses the Protocol Buffers interface by
+# default, the following will work the same:
 myClient = riak.RiakClient(pb_port=8087)
 ```
 
@@ -104,7 +104,7 @@ We are now ready to start interacting with Riak.
 
 <!-- @section -->
 
-# Creating Objects In Riak
+## Creating Objects In Riak
 
 First, let’s create a few objects and a bucket to keep them in.
 
@@ -138,7 +138,7 @@ key3.store()
 
 <!-- @section -->
 
-# Reading Objects From Riak
+## Reading Objects From Riak
 
 Now that we have a few objects stored, let’s retrieve them and make sure
 they contain the values we expect.
@@ -158,7 +158,7 @@ That was easy. We simply request the objects by key.
 
 <!-- @section -->
 
-# Updating Objects In Riak
+## Updating Objects In Riak
 
 While some data may be static, other forms of data may need to be
 updated. This is also easy to accomplish. Let’s update the value of
@@ -172,7 +172,7 @@ fetched3.store()
 
 <!-- @section -->
 
-# Deleting Objects From Riak
+## Deleting Objects From Riak
 
 Nothing is complete without a delete. Fortunately, that's easy too.
 
@@ -194,7 +194,7 @@ assert myBucket.get('three').exists == False
 
 <!-- @section -->
 
-# Working With Complex Objects
+## Working With Complex Objects
 
 Since the world is a little more complicated than simple integers and
 bits of strings, let’s see how we can work with more complex objects.
@@ -250,7 +250,7 @@ fetchedBook.delete()
 
 <!-- @section -->
 
-# Next Steps
+## Next Steps
 
 More complex use cases can be composed from these initial create, read,
 update, and delete (CRUD) operations. In the next chapter we will look at how to store and query more complicated

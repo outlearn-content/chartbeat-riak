@@ -6,7 +6,7 @@ into a few ways to lay out and query our data: secondary indexes and key/value o
 
 <!-- @section -->
 
-# Configuration Changes
+## Configuration Changes
 
 Before we experiment with these methods, we will have to change our Riak
 instance's configuration a little bit.
@@ -19,7 +19,7 @@ Homebrew to install Riak on OSX it will be at
 
 Open the `riak.conf` file in your favorite text editor.
 
-## Using the LevelDB Backend for 2i
+### Using the LevelDB Backend for 2i
 
 Search for the `storage_backend` setting and change it from `bitcask` to
 `leveldb` (because only LevelDB supports secondary indexes, a

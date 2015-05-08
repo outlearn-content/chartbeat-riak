@@ -5,7 +5,7 @@ Creates a new Riak Search index.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```
 PUT /search/index/<index_name>
@@ -14,7 +14,7 @@ PUT /search/index/<index_name>
 
 <!-- @section -->
 
-# Optional Request Body
+## Optional Request Body
 
 If you run a `PUT` request to this endpoint without a request body, Riak
 will create a new Search index that uses the default Search
@@ -36,14 +36,14 @@ More information can be found in Using Search.
 
 <!-- @section -->
 
-# Normal Response Codes
+## Normal Response Codes
 
 * `204 No Content` --- The index has been successfully created
 
 
 <!-- @section -->
 
-# Typical Error Codes
+## Typical Error Codes
 
 * `409 Conflict` --- The index cannot be created because there is
     already an index with that name

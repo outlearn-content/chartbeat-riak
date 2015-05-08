@@ -5,7 +5,7 @@ Checks if the server is alive. This is useful for monitoring tools, load-balance
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 GET /ping
@@ -14,7 +14,7 @@ GET /ping
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal status codes:
 
@@ -23,7 +23,7 @@ Normal status codes:
 
 <!-- @section -->
 
-# Example
+## Example
 
 ```curl
 $ curl -v http://127.0.0.1:8098/ping

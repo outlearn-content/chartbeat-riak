@@ -14,7 +14,7 @@ twitter : "basho"
 
 <!-- @section -->
 
-# Prerequisites
+## Prerequisites
 
 If you haven't set up a Riak Node and started it, please visit the
 Prerequisites first.
@@ -25,7 +25,7 @@ To try this flavor of Riak, a working installation of Java and
 
 <!-- @section -->
 
-# Client Setup
+## Client Setup
 
 [Welle](http://clojureriak.info/) is a community-maintained Riak client
 library for Clojure.
@@ -67,11 +67,11 @@ use this code snippet instead:
 
 <!-- @section -->
 
-# Interacting with Riak
+## Interacting with Riak
 
 We are now ready to start interacting with Riak.
 
-## Creating Objects in Riak
+### Creating Objects in Riak
 
 First, let’s create a few objects and a bucket to keep them in.
 
@@ -95,7 +95,7 @@ recognize the pattern by now.
 (kv/store "test" "three" three :content-type Constants/CTYPE_JSON_UTF8)
 ```
 
-## Reading Objects from Riak
+### Reading Objects from Riak
 
 Now that we have a few objects stored, let’s retrieve them and make sure they
 contain the values we expect.
@@ -112,7 +112,7 @@ contain the values we expect.
 
 That was easy.  We simply request the objects by key.
 
-## Deleting Objects from Riak
+### Deleting Objects from Riak
 
 As a last step, we’ll demonstrate how to delete data.
 
@@ -120,7 +120,7 @@ As a last step, we’ll demonstrate how to delete data.
 (kv/delete "test" "one")
 ```
 
-## Working with Complex Objects
+### Working with Complex Objects
 
 Since the world is a little more complicated than simple integers and bits of
 strings, let’s see how we can work with more complex objects.  Take for

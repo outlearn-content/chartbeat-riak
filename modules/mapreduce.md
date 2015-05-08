@@ -5,7 +5,7 @@ MapReduce is a generic way to query Riak by specifying inputs and constructing a
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 POST /mapred
@@ -22,7 +22,7 @@ _+This request must include an entity (body), which is the JSON form of the MapR
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal status codes:
 * `200 OK`
@@ -38,7 +38,7 @@ Important headers:
 
 <!-- @section -->
 
-# Example
+## Example
 
 ```curl
 $ curl -v -d '{"inputs":"test", "query":[{"link":{"bucket":"test"}},{"map":{"language":"javascript","name":"Riak.mapValuesJson"}}]}' -H "Content-Type: application/json" http://127.0.0.1:8098/mapred

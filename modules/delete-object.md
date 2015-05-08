@@ -5,7 +5,7 @@ Deletes an object from the specified bucket / key.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```
 DELETE /buckets/bucket/keys/key
@@ -27,7 +27,7 @@ before returning a successful response
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal response codes:
 
@@ -44,7 +44,7 @@ and not finding the resource has the same effect as deleting it.
 
 <!-- @section -->
 
-# Example
+## Example
 
 ```curl
 $ curl -v -X DELETE http://127.0.0.1:8098/buckets/test/keys/test2

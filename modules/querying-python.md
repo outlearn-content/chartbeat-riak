@@ -1,11 +1,11 @@
 
 
 
-###A Quick Note on Querying and Schemas
+####A Quick Note on Querying and Schemas
 _Schemas_? Yes we said that correctly, S-C-H-E-M-A-S. It's not a dirty word.  
 Even with a Key/Value store, you will still have a logical database schema of how all the data relates to one another. This can be as simple as using the same key across multiple buckets for different types of data, to having fields in your data that are related by name.  These querying methods will introduce you to some ways of laying out your data in Riak, along with how to query it back.
 
-##Denormalization
+###Denormalization
 
 If you're coming from a relational database, the easiest way to get your application's feet wet with NoSQL is to denormalize your data into related chunks.  For example with a customer database, you might have separate tables for Customers, Addresses, Preferences, etc.  In Riak, you can denormalize all that associated data into a single object and store it into a `Customer` bucket.  You can keep pulling in associated data until you hit one of the big denormalization walls:
 
@@ -15,14 +15,14 @@ If you're coming from a relational database, the easiest way to get your applica
 
 At one of these points we will have to split the model.
 
-##Same Keys - Different Buckets
+###Same Keys - Different Buckets
 
 The simplest way to split up data would be to use the same identity key across different buckets. A good example of this would be a `Customer` object, an `Order` object, and an `OrderSummaries` object that keeps rolled up info about orders such as Total, etc. Let's put some data into Riak so we can play with it.
 
 ```python
 import riak
 
- Creating Data
+# Creating Data
 
 customer = {
     'customer_id': 1,
@@ -111,16 +111,16 @@ order_summary = {
 }
 
 
- Starting Client
+# Starting Client
 client = riak.RiakClient(pb_port=10017, protocol='pbc')
 
- Creating Buckets
+# Creating Buckets
 customer_bucket = client.bucket('Customers')
 order_bucket = client.bucket('Orders')
 order_summary_bucket = client.bucket('OrderSummaries')
 
 
- Storing Data
+# Storing Data
 cr = customer_bucket.new(str(customer['customer_id']),
                          data=customer)
 cr.store()
@@ -163,7 +163,7 @@ Which returns our amalgamated objects:
 While this pattern is very easy and extremely fast with respect to queries and complexity, it's up to the application to know about these intrinsic relationships.  
 
 
-##Secondary Indexes
+###Secondary Indexes
 
 If you're coming from a SQL world, Secondary Indexes (2i) are a lot like SQL indexes.  They are a way to quickly lookup objects based on a secondary key, without scanning through the whole dataset.  This makes it very easy to find groups of related data by values, or even ranges of values.  To properly show this off, we will now add some more data to our application, and add some secondary index entries at the same time.
 

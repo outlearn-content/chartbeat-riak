@@ -6,7 +6,7 @@ indexes in JSON format.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```
 GET /search/index
@@ -15,7 +15,7 @@ GET /search/index
 
 <!-- @section -->
 
-# Response
+## Response
 
 If there are no currently available Search indexes, a `200 OK` will be
 returned but with an empty list as the response value.
@@ -33,11 +33,11 @@ Below is the example output if there is one Search index, called
 ]
 ```
 
-### Normal Response Codes
+#### Normal Response Codes
 
 * `200 OK`
 
-### Typical Error Codes
+#### Typical Error Codes
 
 * `404 Object Not Found` --- Typically returned if Riak Search is not
     currently enabled on the node

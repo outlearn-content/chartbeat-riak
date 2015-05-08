@@ -14,7 +14,7 @@ twitter : "basho"
 
 <!-- @section -->
 
-# What is Riak?
+## What is Riak?
 
 Riak is a distributed database designed to deliver maximum data
 availability by distributing data across multiple servers. As long as
@@ -35,7 +35,7 @@ hand, reads will return the most up-to-date version of data, with the
 drawback that some nodes will be temporarily unavailable to receive
 writes in certain rare situations.
 
-## Basho's goals for Riak
+### Basho's goals for Riak
 
 Goal | Description
 -------|-------
@@ -44,7 +44,7 @@ Goal | Description
 **Scalability** | Riak automatically distributes data around the cluster and yields a near-linear performance increase as you add capacity
 **Masterless** | Your requests are not held hostage to a specific server in the cluster that may or may not be available
 
-## When Riak makes sense
+### When Riak makes sense
 
 If your data does not fit on a single server and demands a distributed
 database architecture, you should take a close look at Riak as a
@@ -72,7 +72,7 @@ available Data Types: flags, registers, counters,
 sets, or maps. These Data Types enable you to take advantage of Riak's
 high availability approach while simplifying application development.
 
-## When Riak is Less of a Good Fit
+### When Riak is Less of a Good Fit
 
 Basho recommends that you run no fewer than 5 data servers in a cluster.
 This means that Riak can be overkill for small databases. If you're not
@@ -102,12 +102,12 @@ outweigh its disadvantages.
 
 <!-- @section -->
 
-# How Does a Riak Cluster Work?
+## How Does a Riak Cluster Work?
 
 A Riak cluster is a group of **nodes** that are in constant
 communication to ensure data availability and partition tolerance.
 
-## What is a Riak Node?
+### What is a Riak Node?
 
 A Riak node is not quite the same as a server, but in a production
 environment the two should be equivalent. A developer may run multiple
@@ -123,7 +123,7 @@ for Riak's fault tolerance and scalability.
 Each node is responsible for multiple data partitions, as discussed
 below:
 
-## Riak Automatically Re-Distributes Data When Capacity is Added
+### Riak Automatically Re-Distributes Data When Capacity is Added
 
 When you add (or remove) machines, data is rebalanced automatically with
 no downtime. New machines claim data until ownership is equally spread
@@ -133,14 +133,14 @@ what makes it possible for any node in the cluster to receive requests.
 The end result is that developers don't need to deal with the underlying
 complexity of where data lives.
 
-## Consistent Hashing
+### Consistent Hashing
 
 Data is distributed across nodes using consistent hashing. Consistent
 hashing ensures that data is evenly distributed around the cluster and
 makes possible the automatic redistribution of data as the cluster
 scales.
 
-## Intelligent Replication
+### Intelligent Replication
 
 Riak's replication scheme ensures that you can still read, write, and
 update data if nodes go down. Riak allows you to set a replication
@@ -156,14 +156,14 @@ cluster, 10 nodes in a 15-node cluster, and so on.
 
 <!-- @section -->
 
-# When Things Go Wrong
+## When Things Go Wrong
 
 Riak retains fault tolerance, data integrity, and availability even in
 failure conditions such as hardware failure and network partitions. Riak
 has a number of means of addressing these scenarios and other bumps in
 the road, like version conflicts in data.
 
-## Hinted Handoff
+### Hinted Handoff
 
 Hinted handoff enables Riak to handle node failure. If a node goes down,
 a neighboring node will take over its storage operations. When the
@@ -172,7 +172,7 @@ handed back to it. This ensures that availability for writes and updates
 is maintained automatically, minimizing the operational burden of
 failure conditions.
 
-## Version Conflicts
+### Version Conflicts
 
 In any system that replicates data, conflicts can arise, for example
 when two clients update the same object at the exact same time or when
@@ -192,7 +192,7 @@ it is created. They are extended each time a replica is updated to keep
 track of versions. You can also allow clients to resolve conflicts
 themselves if that is a better fit for your use case.
 
-## Riak Data Types
+### Riak Data Types
 
 If you are not interested in dealing with version conflicts on the
 application side, Riak Data Types offer a powerful
@@ -202,7 +202,7 @@ automatically by Riak using Data Type-specific algorithms inspired by
 research into [convergent replicated data
 types](http://hal.upmc.fr/docs/00/55/55/88/PDF/techreport.pdf).
 
-## Read Repair
+### Read Repair
 
 When an outdated replica is returned as part of a read request, Riak
 will automatically update the out-of-sync replica to make it consistent.
@@ -210,7 +210,7 @@ Read repair, a self-healing property of
 the database, will even update a replica that returns a `not_found` in
 the event that a node loses the data due to physical failure.
 
-## Reading and Writing Data in Failure Conditions
+### Reading and Writing Data in Failure Conditions
 
 In Riak, you can set an R value for reads and a W value for writes.
 These values give you control over how many replicas must respond to a

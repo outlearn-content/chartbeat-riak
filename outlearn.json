@@ -11,8 +11,8 @@
       "pages" : [
         {"title" : "Welcome", "content" : "./context-pages/welcome.md"},
         {"module" : "before-we-begin"},
-        {"module" : "riak-at-kiip"},
         {"module" : "why-riak"},
+        {"module" : "riak-at-kiip"},
         {"module" : "riak-at-chartbeat"},
         {"title" : "Prep your mind and machine", "content" : "./context-pages/prepare.md"},
         {"module" : "riak-concepts"},

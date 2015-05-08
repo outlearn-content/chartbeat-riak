@@ -5,7 +5,7 @@ Reads an object from the specified bucket/key.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 GET /buckets/bucket/keys/key
@@ -42,7 +42,7 @@ Scroll down to the Manually requesting siblings example for more information.
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal response codes:
 
@@ -91,7 +91,7 @@ given in the response.</p>
 
 <!-- @section -->
 
-# Simple Example
+## Simple Example
 
 ```curl
 $ curl -v http://127.0.0.1:8098/buckets/test/keys/doc2
@@ -123,9 +123,9 @@ $ curl -v http://127.0.0.1:8098/buckets/test/keys/doc2
 
 <!-- @section -->
 
-# Siblings examples
+## Siblings examples
 
-## Manually requesting siblings
+### Manually requesting siblings
 
 ```curl
 $ curl -v http://127.0.0.1:8098/buckets/test/keys/doc
@@ -180,7 +180,7 @@ $ curl -v http://127.0.0.1:8098/buckets/test/keys/doc?vtag=16vic4eU9ny46o4KPiDz1
 {"bar":"baz"}
 ```
 
-## Get all siblings in one request
+### Get all siblings in one request
 
 ```curl
 $ curl -v http://127.0.0.1:8098/buckets/test/keys/doc -H "Accept: multipart/mixed"

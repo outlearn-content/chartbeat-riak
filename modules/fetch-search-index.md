@@ -5,7 +5,7 @@ Retrieves information about a Riak Search index.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```
 GET /search/index/<index_name>
@@ -14,14 +14,14 @@ GET /search/index/<index_name>
 
 <!-- @section -->
 
-# Normal Response Codes
+## Normal Response Codes
 
 * `200 OK`
 
 
 <!-- @section -->
 
-# Typical Error Codes
+## Typical Error Codes
 
 * `404 Object Not Found` --- No Search index with that name is currently
     available
@@ -30,7 +30,7 @@ GET /search/index/<index_name>
 
 <!-- @section -->
 
-# Response
+## Response
 
 If the index is found, Riak will output a JSON object describing the
 index, including its name, the `n_val` associated with it, and the search

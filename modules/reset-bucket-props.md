@@ -6,7 +6,7 @@ default settings.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 DELETE /buckets/bucket/props
@@ -17,7 +17,7 @@ Resetting bucket properties is not available via the old API format.
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal status codes:
 
@@ -26,7 +26,7 @@ Normal status codes:
 
 <!-- @section -->
 
-# Example
+## Example
 
 ```curl
 $ curl -XDELETE -v localhost:8098/buckets/bucket/props                                                                                                             {13:47}

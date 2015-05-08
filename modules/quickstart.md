@@ -14,7 +14,7 @@ twitter : "basho"
 
 <!-- @section -->
 
-# Overview
+## Overview
 
 In this tutorial, we'll share some quick start installers for OSX, as
 well as provide instructions for building a
@@ -24,7 +24,7 @@ Riak cluster running on your local machine.
 
 <!-- @section -->
 
-# DMG Installer for OSX
+## DMG Installer for OSX
 
 If you would like to explore some of Riak's functionality using a simple,
 self-contained installer for OSX, you may view the
@@ -36,7 +36,7 @@ application should not be used in a production deployment.
 
 <!-- @section -->
 
-# Riak Dev Cluster for OSX
+## Riak Dev Cluster for OSX
 
 To quickly create a five-node local devrel cluster on OSX, you may use the
 [Riak Dev Cluster](https://github.com/basho-labs/riak-dev-cluster/) project.
@@ -47,7 +47,7 @@ be used in a production deployment.
 
 <!-- @section -->
 
-# Install Riak
+## Install Riak
 
 The above installers helped you explore the basics of Riak on OSX.  
 For full instructions on installing Riak for your desired operating
@@ -72,7 +72,7 @@ cd otp_src_R16B02-basho8
 Once you have unzipped the package, see our guide to installing
 Erlang for installation instructions.
 
-## Get the Source
+### Get the Source
 
 The following links provide platform-specific instructions for
 downloading and installing Riak from source.
@@ -86,7 +86,7 @@ downloading and installing Riak from source.
   * AWS Marketplace
   * Unlisted Operating System
 
-## Build Riak
+### Build Riak
 
 Now that you've downloaded and installed Riak using the instructions
 above, it's time to build it. Access the `riak` directory from your
@@ -104,7 +104,7 @@ take a few moments.
 
 <!-- @section -->
 
-# Start Up Five Nodes
+## Start Up Five Nodes
 
 Now that Riak is built, use [Rebar](https://github.com/basho/rebar), a
 packaging and build system for Erlang applications, to get five
@@ -167,7 +167,7 @@ iterate through and start the available nodes:
 for node in dev*; do $node/bin/riak start; done
 ```
 
-## Check Running Nodes
+### Check Running Nodes
 
 After you have the nodes up and running, it's time to test them and make
 sure that they're available. You can do this by taking a quick look at
@@ -203,7 +203,7 @@ for node in dev*; do $node/bin/riak ping; done
 
 <!-- @section -->
 
-# Create the Cluster
+## Create the Cluster
 
 Although you now have five nodes up and running, they are not yet
 connected to one another, i.e. they do not yet form a Riak
@@ -269,9 +269,9 @@ join           'dev5@127.0.0.1'
 
 NOTE: Applying these changes will result in 1 cluster transition
 
-##############################################################################
+###############################################################################
                          After cluster transition 1/1
-##############################################################################
+###############################################################################
 
 ================================= Membership ==================================
 Status     Ring    Pending    Node
@@ -312,7 +312,7 @@ the riak-admin command line documentation.
 
 <!-- @section -->
 
-# Test the Cluster
+## Test the Cluster
 
 Now that we have a running five-node Riak cluster, let's make sure that
 it's working properly. For this we have a couple of options. The
@@ -419,7 +419,7 @@ libraries.  </div>
 
 <!-- @section -->
 
-# Setting Up Your Riak Client
+## Setting Up Your Riak Client
 
 Basho maintains official client libraries for Java, Ruby, Python,
 .NET and Erlang. Below are links to client-specific documentation for each
@@ -439,7 +439,7 @@ clients. In each case, it will be assumed that the client has been
 successfully installed and that your application has been configured to
 use it.
 
-## Java
+### Java
 
 In the new 2.0 version of the Java client, Riak is accessed at the
 cluster level rather than at the basic client level, as in
@@ -527,7 +527,7 @@ and Riak Search 2.0, as well as a variety of other
 pages in the **Riak for Developers** section of the documentation (in
 the navbar on the left).
 
-## Ruby
+### Ruby
 
 How you connect to Riak with the Ruby client depends on whether you're
 using Riak in a development environment with a one-node
@@ -567,7 +567,7 @@ the basics of Riak, Riak Data Types,
 data modeling with Riak Data Types, and Riak Search 2.0, as well as a variety of other pages in the **Riak for
 Developers** section of the documentation (in the navbar on the left).
 
-## Python
+### Python
 
 How you connect to Riak with the Python client depends on whether you're
 using Riak in a development environment with a one-node
@@ -608,7 +608,7 @@ and Riak Search 2.0, as well as a variety of other
 pages in the **Riak for Developers** section of the documentation (in
 the navbar on the left).
 
-## .NET
+### .NET
 
 When using the [.NET
 client](https://github.com/basho/riak-dotnet-client), you should
@@ -655,7 +655,7 @@ object that is used to execute all operations with Riak:
 var client = cluster.CreateClient();
 ```
 
-## Node.js
+### Node.js
 
 There are a variety of ways to set up cluster interaction with the Node.js
 client. The following is the simplest way, which is to pass an array of
@@ -693,7 +693,7 @@ and Riak Search 2.0, as well as a variety of other
 pages in the **Riak for Developers** section of the documentation (in
 the navbar on the left).
 
-## Erlang
+### Erlang
 
 How you connect to Riak with the Erlang client depends on whether you're
 using Riak in a development environment with a one-node

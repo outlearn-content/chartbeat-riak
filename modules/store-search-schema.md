@@ -5,7 +5,7 @@ Creates a new Riak Search schema.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```
 PUT /search/index/<schema_name>
@@ -14,7 +14,7 @@ PUT /search/index/<schema_name>
 
 <!-- @section -->
 
-# Required Form Data
+## Required Form Data
 
 In order to create a new Search schema, you must pass Riak a properly
 formed XML schema. More information can be found in the Search
@@ -31,14 +31,14 @@ curl -XPUT http://localhost:8098/search/schema/my_custom_schema \
 
 <!-- @section -->
 
-# Normal Response
+## Normal Response
 
 * `204 No Content` --- The schema has been successfully created
 
 
 <!-- @section -->
 
-# Typical Error Codes
+## Typical Error Codes
 
 * `400 Bad Request` --- The schema cannot be created because there is
     something wrong with the schema itself, e.g. an XML formatting error

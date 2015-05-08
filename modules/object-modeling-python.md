@@ -29,7 +29,7 @@ Recipient's `Inbox` timeline and the User's own `Sent` timeline. If it's
 a group message, we'll append it to the Group's timeline, as well as to
 the User's `Sent` timeline.
 
-### Buckets and Keys Revisited
+#### Buckets and Keys Revisited
 
 Now that we've worked out how we will differentiate data in the system,
 let's figure out our bucket and key names.
@@ -75,7 +75,7 @@ will cover siblings, sibling resolution, and sibling explosions in the
 next chapter.
 </div>
 
-### Keeping our story straight with repositories
+#### Keeping our story straight with repositories
 
 Now that we've figured out our object model, let's write some
 repositories to help create and work with these objects in Riak:
@@ -194,20 +194,20 @@ class TimelineRepository:
 Finally, let's test them:
 
 ```python
- Setup our repositories
+# Setup our repositories
 client = riak.RiakClient(pb_port=10017, protocol='pbc')
 userRepo = UserRepository(client)
 msgsRepo = MsgRepository(client)
 timelineRepo = TimelineRepository(client)
 
- Save users
+# Save users
 userRepo.save(marleen)
 userRepo.save(joe)
 
- Post msg to timelines
+# Post msg to timelines
 timelineRepo.post_message(msg)
 
- Get Joe's inbox for today, get first message
+# Get Joe's inbox for today, get first message
 joes_inbox_today = timelineRepo.get_timeline(
     joe['user_name'],
     TimelineRepository.INBOX,

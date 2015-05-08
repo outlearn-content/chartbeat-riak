@@ -5,22 +5,22 @@ Secondary Indexes allows an application to tag a Riak object with one or more fi
 
 <!-- @section -->
 
-# Request
+## Request
 
-## Exact Match
+### Exact Match
 
 ```bash
 GET /buckets/mybucket/index/myindex_bin/value
 ```
 
-## Range Query
+### Range Query
 
 ```
 GET /buckets/mybucket/index/myindex_bin/start/end
 ```
 
 
-### Range query with terms
+#### Range query with terms
 To see the index values matched by the range, use `return_terms=true`.
 
 ```
@@ -30,7 +30,7 @@ GET /buckets/mybucket/index/myindex_bin/start/end?return_terms=true
 
 
 
-## Pagination
+### Pagination
 Add the parameter `max_results` for pagination. This will limit the results and provide for the next request a `continuation` value.
 
 ```
@@ -42,7 +42,7 @@ GET /buckets/mybucket/index/myindex_bin/start/end?return_terms=true&max_results=
 
 
 
-## Streaming
+### Streaming
 ```
 GET /buckets/mybucket/index/myindex_bin/start/end?stream=true
 ```
@@ -52,7 +52,7 @@ GET /buckets/mybucket/index/myindex_bin/start/end?stream=true
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal status codes:
 
@@ -67,7 +67,7 @@ Typical error codes:
 
 <!-- @section -->
 
-# Example
+## Example
 
 ```curl
 $ curl -v http://localhost:8098/buckets/mybucket/index/field1_bin/val1

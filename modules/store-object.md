@@ -7,7 +7,7 @@ Riak assign a key to a new object.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 POST /buckets/bucket/keys       # Riak-defined key
@@ -55,7 +55,7 @@ defined at the bucket level)
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal status codes:
 
@@ -83,7 +83,7 @@ and the response can be dealt with similarly.
 
 <!-- @section -->
 
-# Example: Storing Without Key
+## Example: Storing Without Key
 
 ```curl
 $ curl -v http://127.0.0.1:8098/buckets/test/keys \
@@ -113,7 +113,7 @@ $ curl -v http://127.0.0.1:8098/buckets/test/keys \
 
 <!-- @section -->
 
-# Example: Storing With Key
+## Example: Storing With Key
 
 ```curl
 $ curl -v -XPUT -d '{"bar":"baz"}' -H "Content-Type: application/json" -H "X-Riak-Vclock: a85hYGBgzGDKBVIszMk55zKYEhnzWBlKIniO8mUBAA==" http://127.0.0.1:8098/buckets/test/keys/doc?returnbody=true

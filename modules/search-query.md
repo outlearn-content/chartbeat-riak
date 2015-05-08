@@ -5,7 +5,7 @@ Performs a Riak Search query.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```
 GET /search/query/<index_name>
@@ -14,7 +14,7 @@ GET /search/query/<index_name>
 
 <!-- @section -->
 
-# Optional Query Parameters
+## Optional Query Parameters
 
 * `wt` --- The [response
     writer](https://cwiki.apache.org/confluence/display/solr/Response+Writers)
@@ -28,14 +28,14 @@ GET /search/query/<index_name>
 
 <!-- @section -->
 
-# Normal Response Codes
+## Normal Response Codes
 
 * `200 OK`
 
 
 <!-- @section -->
 
-# Typical Error Codes
+## Typical Error Codes
 
 * `400 Bad Request` --- Returned when, for example, a malformed query is
     supplied
@@ -46,7 +46,7 @@ GET /search/query/<index_name>
 
 <!-- @section -->
 
-# Response
+## Response
 
 If a `200 OK` is returned, then the Search query has been successful.
 Below is an example JSON response from querying an index that currently

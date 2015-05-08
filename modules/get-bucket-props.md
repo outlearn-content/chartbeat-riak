@@ -5,7 +5,7 @@ Reads the bucket properties.
 
 <!-- @section -->
 
-# Request
+## Request
 
 ```bash
 GET /buckets/bucket/props
@@ -20,7 +20,7 @@ default). See also HTTP List Keys.
 
 <!-- @section -->
 
-# Response
+## Response
 
 Normal status codes:
 
@@ -40,7 +40,7 @@ bucket properties.
 
 <!-- @section -->
 
-# Example
+## Example
 
 ```curl
 $ curl -v http://127.0.0.1:8098/buckets/test/props
