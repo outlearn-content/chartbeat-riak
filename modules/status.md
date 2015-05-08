@@ -7,16 +7,16 @@ Reports about the performance and configuration of the Riak node to which it was
 
 # Performance
 
-{{#1.2.0-1.2.1}}
+
 Requests to the `/stats` endpoint should not be executed more than once
 a minute as statistics are recalculated every time the command is
 executed.
-{{/1.2.0-1.2.1}}
 
-{{#1.3.0+}}
+
+
 Repeated requests to the `/stats` endpoint do not have a negative
 performance impact as the statistics are cached internally in Riak.
-{{/1.3.0+}}
+
 
 
 <!-- @section -->
