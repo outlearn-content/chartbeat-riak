@@ -4,7 +4,7 @@
   "paths" : [
     {
       "name" : "taste-of-riak",
-      "title" : "Taste of Riak",
+      "title" : "Kick Off Riak with Chartbeat",
       "description" : "An introduction to Riak using Python and HTTP API",
       "privacy" : "public",
       "pages" : [
