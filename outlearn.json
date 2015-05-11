@@ -6,6 +6,7 @@
       "name" : "taste-of-riak",
       "title" : "Kick Off Riak with Chartbeat",
       "description" : "An introduction to Riak using Python and HTTP API",
+      "coverImage" : "https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/Chartbeat-logo.png",
       "privacy" : "public",
       "pages" : [
         {"title" : "Welcome", "content" : "./context-pages/welcome.md"},
