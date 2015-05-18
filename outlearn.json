@@ -4,7 +4,7 @@
   "paths" : [
     {
       "name" : "chartbeat-riak",
-      "title" : "Kick Off Riak with Chartbeat",
+      "title" : "Kick Off Riak",
       "description" : "An introduction to Riak using Python and HTTP API",
       "coverImage" : "https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/Chartbeat-logo.png",
       "privacy" : "public",
