@@ -1,3 +1,4 @@
+# Welcome
 
 Hi team.  Welcome to Chartbeat's Taste of Riak!
 

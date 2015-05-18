@@ -1,3 +1,4 @@
+# Live long and prosper
 
 Thanks for taking the path.  Hope you found it at least somewhat useful.  Now go forth with Riak!
 
