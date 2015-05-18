@@ -4,6 +4,7 @@ version : "0.1"
 title : "Before We Begin"
 description: "Set expectations and assess initial confidence."
 coverImage : "https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/Chartbeat-logo.png"
+freshnessDate : 2015-06-01
 license : "CC Attribution-ShareAlike 4.0"
 -->
 
