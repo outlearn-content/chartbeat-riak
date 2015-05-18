@@ -12,7 +12,7 @@
         {"page" : "./context-pages/welcome.md"},
         {"module" : "before-we-begin"},
         {"module" : "basho/why-riak"},
-        {"module" : "outlearn://basho/riak-at-kiip"},
+        {"module" : "basho/riak-at-kiip"},
         {"module" : "riak-at-chartbeat"},
         {"page" : "./context-pages/prepare.md"},
         {"module" : "coderoshi/riak-concepts"},
