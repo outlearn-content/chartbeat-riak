@@ -4,7 +4,7 @@ version : "0.1"
 title : "Lab Assignment"
 description: "Get learners using Riak in the Chartbeat environment"
 coverImage : "https://raw.githubusercontent.com/outlearn-content/chartbeat-riak/master/images/Chartbeat-logo.png"
-freshnessDate : 2015-06-01
+freshnessDate : 2015-05-19
 license : "CC Attribution-ShareAlike 4.0"
 -->
 

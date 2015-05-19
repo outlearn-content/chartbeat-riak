@@ -4,7 +4,7 @@ version : "0.1"
 title : "Conclusion and Next Steps"
 description: "Review what learners have learned and suggest next steps"
 coverImage : "https://raw.githubusercontent.com/outlearn-content/chartbeat-riak/master/images/Chartbeat-logo.png"
-freshnessDate : 2015-06-01
+freshnessDate : 2015-05-19
 license : "CC Attribution-ShareAlike 4.0"
 -->
 
