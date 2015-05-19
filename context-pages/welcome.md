@@ -14,4 +14,4 @@ Good luck!
 
 Nathan
 
-<img src="https://raw.githubusercontent.com/outlearn-content/taste-of-riak/master/assets/npotter.jpg" alt="Nathan" style="width:250px;height:250px" align="left">
+<img src="https://raw.githubusercontent.com/outlearn-content/chartbeat-riak/master/images/npotter.jpg" alt="Nathan" style="width:250px;height:250px" align="left">
