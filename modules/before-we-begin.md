@@ -4,7 +4,7 @@
 "version" : "0.1",
 "title" : "Before We Begin",
 "description": "Set expectations and assess initial confidence.",
-"coverImage" : "http://www.publicdomainpictures.net/download-picture.php?adresar=20000&soubor=teal-curve-background-122171296612204QD6.jpg"
+"coverImage" : "http://www.publicdomainpictures.net/download-picture.php?adresar=20000&soubor=teal-curve-background-122171296612204QD6.jpg",
 "freshnessDate" : 2015-05-19,
 "license" : "CC Attribution-ShareAlike 4.0"
 }
