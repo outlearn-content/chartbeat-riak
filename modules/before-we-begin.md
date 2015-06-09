@@ -3,14 +3,14 @@
 "name" : "before-we-begin",
 "version" : "0.1",
 "title" : "Before We Begin",
-"description": "Set expectations and assess initial confidence. ",
+"description": "Set expectations and assess initial confidence.",
 "coverImage" : "http://www.publicdomainpictures.net/download-picture.php?adresar=20000&soubor=teal-curve-background-122171296612204QD6.jpg",
 "freshnessDate" : 2015-05-19,
 "license" : "CC Attribution-ShareAlike 4.0"
 }
 -->
 
-<!-- @section, "title": "Getting started" -->
+<!-- @section, "title": "Getting started!" -->
 
 We'll kick things of with a case study of from Kiip and how they use Riak to connect advertisers and app makers. Next in line will be an overview from Basho on what Riak is good at. To round out the background, you'll get a sense of why Chartbeat is using Riak.
 
