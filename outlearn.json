@@ -28,8 +28,6 @@
         {"module" : "basho/search-related-operations"},
         {"page" : "./context-pages/clojure.md"},
         {"module" : "basho/clojure"},
-        {"page" : "./context-pages/try-it.md"},
-        {"module" : "lab"},
         {"module" : "conclusion"},
         {"page" : "./context-pages/live-long.md"}
       ]
