@@ -23,11 +23,6 @@ Well done, you've covered a lot of ground. The key things you learned in this pa
 - Use Riak with Clojure
 - Apply your Riak skills in the environment used at Chartbeat
 
-<!-- @section, "title": "Here is what you now should be able to do" -->
-
-To put all of this into practice, we expect that you are ready to do the following:
-
-- Sample
 
 <!-- @section, "title": "Here are some future directions for your learning" -->
 
