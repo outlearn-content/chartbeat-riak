@@ -8,7 +8,28 @@
       "description" : "An introduction to Riak using Python and HTTP API",
       "privacy" : "public",
       "pages" : [
-        {"page" : "./context-pages/welcome.md"}
+        {"page" : "./context-pages/welcome.md"},
+        {"module" : "before-we-begin"},
+        {"module" : "basho/why-riak"},
+        {"module" : "basho/riak-at-kiip"},
+        {"module" : "chartbeat/chartbeat-riak"},
+        {"page" : "./context-pages/prepare.md"},
+        {"module" : "coderoshi/riak-concepts"},
+        {"module" : "basho/quickstart"},
+        {"page" : "./context-pages/python.md"},
+        {"module" : "basho/python"},
+        {"module" : "basho/querying-python"},
+        {"module" : "basho/object-modeling-python"},
+        {"page" : "./context-pages/http-api.md"},
+        {"module" : "basho/bucket-related-operations"},
+        {"module" : "basho/object-related-operations"},
+        {"module" : "basho/query-related-operations"},
+        {"module" : "basho/server-related-operations"},
+        {"module" : "basho/search-related-operations"},
+        {"page" : "./context-pages/clojure.md"},
+        {"module" : "basho/clojure"},
+        {"module" : "conclusion"},
+        {"page" : "./context-pages/live-long.md"}
       ]
     }
   ],
